@@ -9,6 +9,8 @@ const routes: Routes = [
   { path: '', redirectTo: 'view-student', pathMatch: 'full' },
   { path: 'view-student', component: StudentListComponent },
   { path: 'add-student', component: AddStudentComponent },
+  { path: 'view-partner', component: PartnerlistComponent },
+  { path: 'register', component: RegisterComponent }
 ];
 
 @NgModule({
