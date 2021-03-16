@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Hello World!</h2>
+<h2>First Webapp build with Maven</h2>
 </body>
 </html>
