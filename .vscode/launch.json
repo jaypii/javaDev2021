@@ -5,6 +5,26 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch PayrollApplication",
+            "request": "launch",
+            "mainClass": "com.ztsstudio.Payroll.PayrollApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch QuickStart",
+            "request": "launch",
+            "mainClass": "QuickStart"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "testIt.App",
+            "projectName": "testIt"
+        },
+        {
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",

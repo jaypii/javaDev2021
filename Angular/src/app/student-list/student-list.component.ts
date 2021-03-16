@@ -10,6 +10,7 @@ import {FormControl,FormGroup,Validators} from '@angular/forms';
   templateUrl: './student-list.component.html',
   styleUrls: ['./student-list.component.css']
 })
+
 export class StudentListComponent implements OnInit {
 
  constructor(private studentservice:StudentService) { }
@@ -18,14 +19,12 @@ export class StudentListComponent implements OnInit {
   dtOptions: DataTables.Settings = {};
   dtTrigger: Subject<any>= new Subject();
 
-
   students: Observable<Student[]>;
   student : Student=new Student();
   deleteMessage=false;
   studentlist:any;
   isupdated = false;    
  
-
   ngOnInit() {
     this.isupdated=false;
     this.dtOptions = {
@@ -52,7 +51,6 @@ export class StudentListComponent implements OnInit {
         },
         error => console.log(error));
   }
-
 
   updateStudent(id: number){
     this.studentservice.getStudent(id)
